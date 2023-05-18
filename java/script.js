@@ -1,6 +1,10 @@
-function showAlert() { alert('¡Hola, esta es una alerta desde JavaScript!'); }
+function showalert() { alert('¡Hola, esta es una alerta desde Javascript!'); }
 
 const form = document.getElementById('myForm');
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    validateForm();
+});
 
 if (form) {
     form.addEventListener('submit', function (event) {
@@ -10,10 +14,14 @@ if (form) {
 
 }
 
+
+
 function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,7}$/
     return regex.test(email)
-}
+};
+
+
 function validateForm() {
     const emailInput = document.getElementById('email');
     const email = emailInput.value;
@@ -22,10 +30,18 @@ function validateForm() {
     } else {
         alert('Correo electrónico enviado correctamente.');
     }
-}
 
-document.querySelector("button.button-menu-toggle")
-    .addEventListener("click", function () {
-        document.querySelector(".nav-links").
-            classList.toggle("nav-links-responsive")
-    })
+    document.querySelector("button.button-menu-toggle")
+        .addEventListener("click", function () {
+            document.querySelector(".nav-links").
+                classList.toggle("nav-links-responsive")
+        })
+
+
+
+
+
+
+
+
+}
