@@ -37,11 +37,4 @@ function validateForm() {
                 classList.toggle("nav-links-responsive")
         })
 
-
-
-
-
-
-
-
 }
