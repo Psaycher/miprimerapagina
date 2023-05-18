@@ -13,6 +13,10 @@ main {
     min-height: 71vh;
 }
 
+.greetings {
+    text-align: center;
+}
+
 footer {
     position: relative;
     bottom: 0;
@@ -27,8 +31,6 @@ footer {
     
         
 }
-
-
 
 .video-container {
     display: flex;
@@ -74,11 +76,6 @@ p {
     padding: 10px;
 }
 
-@media (max-width: 600px) {
-    .column {
-        flex: 100%;
-    }
-}
 
 .container-nav {
     display: flex;
